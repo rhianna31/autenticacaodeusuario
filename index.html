@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .imgLogin{
+            width: 50px;
+        }
+        .error{
+            color:red;
+            font-size: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="imagens/logo.png">
+        <form action ="#">
+            <label>Login</label>
+            <input type="text" id = "login">
+            <span class="error" id="errologin"></span>
+
+            <label>Senha</label>
+            <input type="password" id = "senha">
+            <span class="error"  id="erropassword"></span>
+
+            <p>Esqueceu a senha?</p>
+            <button type="button" onclick="autenticar()">Entrar</button>
+        </form>
+        <p>Ou</p>
+        <img class="imgLogin" src="imagens/google.png">
+        <img class="imgLogin" src="imagens/microsoft.png">
+    </div>
+    <script src="js/autenticar.js"></script>
+</body>
+</html>
